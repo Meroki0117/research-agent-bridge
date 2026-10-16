@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-16",
+  "timezone": "Asia/Shanghai",
+  "command": "npm test",
+  "node": "v24.16.0",
+  "version": "0.2.0",
+  "passed": 30,
+  "failed": 0,
+  "skipped": 0,
+  "exit_code": 0,
+  "scope": "Build and offline unit/integration tests; live-smoke.json is historical v0.1.0 evidence, not a new paid test."
+}

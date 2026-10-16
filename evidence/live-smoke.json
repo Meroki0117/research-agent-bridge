@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "mode": "official-deepseek",
+  "protocol": "legacy-initialize",
+  "two_stdio_processes": true,
+  "requests": 4,
+  "overlapping_tasks": true,
+  "total_tokens": 3382,
+  "results": [
+    {
+      "task": {
+        "task_id": "183f515a-0493-48bc-b39c-2d3e23c7eec2",
+        "agent_id": "183f515a-0493-48bc-b39c-2d3e23c7eec2",
+        "project_id": "smoke",
+        "role": "proof",
+        "backend": "external",
+        "profile": "deepseek",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "state": "completed",
+        "progress": "Ready for coordinator review",
+        "created_at": "2026-10-16T05:34:06.349Z",
+        "started_at": "2026-10-16T05:34:06.627Z",
+        "finished_at": "2026-10-16T05:34:08.114Z",
+        "context_revision": 1,
+        "requests": 2,
+        "usage": {
+          "input_tokens": 1642,
+          "output_tokens": 43,
+          "complete": true
+        },
+        "tools_used": [
+          "read_material"
+        ],
+        "artifact_available": true,
+        "partial_artifact_available": false
+      },
+      "artifact": {
+        "task_id": "183f515a-0493-48bc-b39c-2d3e23c7eec2",
+        "state": "completed",
+        "partial": false,
+        "content": "PROOF_TOKEN_173",
+        "total_chars": 15,
+        "next_offset": null
+      }
+    },
+    {
+      "task": {
+        "task_id": "c4c70179-705b-4507-bc04-faefcd22a5e0",
+        "agent_id": "c4c70179-705b-4507-bc04-faefcd22a5e0",
+        "project_id": "smoke",
+        "role": "review",
+        "backend": "external",
+        "profile": "deepseek",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "state": "completed",
+        "progress": "Ready for coordinator review",
+        "created_at": "2026-10-16T05:34:06.350Z",
+        "started_at": "2026-10-16T05:34:06.643Z",
+        "finished_at": "2026-10-16T05:34:08.067Z",
+        "context_revision": 1,
+        "requests": 2,
+        "usage": {
+          "input_tokens": 1648,
+          "output_tokens": 49,
+          "complete": true
+        },
+        "tools_used": [
+          "read_material"
+        ],
+        "artifact_available": true,
+        "partial_artifact_available": false
+      },
+      "artifact": {
+        "task_id": "c4c70179-705b-4507-bc04-faefcd22a5e0",
+        "state": "completed",
+        "partial": false,
+        "content": "REVIEW_TOKEN_829",
+        "total_chars": 16,
+        "next_offset": null
+      }
+    }
+  ],
+  "scope": "Real MCP transport, durable queue and provider tool loop. Native GPT orchestration is a separate Codex-session acceptance check."
+}

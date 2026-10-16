@@ -1,0 +1,438 @@
+{
+  "ok": true,
+  "mode": "local-mock",
+  "protocol": "auto-negotiated",
+  "two_stdio_processes": true,
+  "requests": 4,
+  "overlapping_tasks": true,
+  "total_tokens": 440,
+  "results": [
+    {
+      "task": {
+        "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+        "agent_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+        "project_id": "smoke",
+        "role": "proof",
+        "backend": "external",
+        "profile": "deepseek",
+        "provider": "test",
+        "model": "deepseek-flash",
+        "state": "completed",
+        "progress": "Ready for coordinator review",
+        "created_at": "2026-10-16T06:04:17.586Z",
+        "started_at": "2026-10-16T06:04:17.854Z",
+        "finished_at": "2026-10-16T06:04:18.213Z",
+        "context_revision": 1,
+        "requests": 2,
+        "usage": {
+          "input_tokens": 200,
+          "output_tokens": 20,
+          "complete": true
+        },
+        "tools_used": [
+          "read_material"
+        ],
+        "artifact_available": true,
+        "partial_artifact_available": false,
+        "elapsed_ms": 627,
+        "queued_ms": 268,
+        "execution_ms": 359,
+        "phase": "completed",
+        "phase_label": "已完成 · 待总调度审查",
+        "event_cursor": 16,
+        "recent_events": [
+          {
+            "kind": "response_received",
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:18.047Z",
+            "state": "running",
+            "request": 1,
+            "elapsed_ms": 461,
+            "event_id": 7,
+            "label": "已收到模型响应"
+          },
+          {
+            "kind": "tool_started",
+            "tool_name": "read_material",
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:18.049Z",
+            "state": "running",
+            "request": 1,
+            "elapsed_ms": 463,
+            "event_id": 8,
+            "label": "调用工具：读取材料"
+          },
+          {
+            "kind": "tool_completed",
+            "tool_name": "read_material",
+            "duration_ms": 0,
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:18.050Z",
+            "state": "running",
+            "request": 1,
+            "elapsed_ms": 464,
+            "event_id": 9,
+            "label": "工具完成：读取材料"
+          },
+          {
+            "kind": "request_started",
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:18.052Z",
+            "state": "running",
+            "request": 2,
+            "elapsed_ms": 466,
+            "event_id": 10,
+            "label": "等待模型响应"
+          },
+          {
+            "kind": "response_received",
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:18.211Z",
+            "state": "running",
+            "request": 2,
+            "elapsed_ms": 625,
+            "event_id": 15,
+            "label": "已收到模型响应"
+          },
+          {
+            "kind": "completed",
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:18.213Z",
+            "state": "completed",
+            "request": 2,
+            "elapsed_ms": 627,
+            "event_id": 16,
+            "label": "已完成 · 待总调度审查"
+          }
+        ],
+        "result_excerpt": "PROOF_TOKEN_173",
+        "result_is_partial": false,
+        "display_markdown": "**外部 Agent · proof · 24bd5860**\n\n模型：test / deepseek-flash ｜ 阶段：已完成 · 待总调度审查\n\n耗时：0.6 秒（排队 0.3 秒，执行 0.4 秒）｜ 请求：2/3\n\n工具：读取材料\n\n最近进度：0.5 秒 工具完成：读取材料 → 0.5 秒 等待模型响应 → 0.6 秒 已收到模型响应 → 0.6 秒 已完成 · 待总调度审查\n\n结果摘录（未经总调度核验）：PROOF\\_TOKEN\\_173",
+        "next_action": "汇报终态；如有产物，读取 get_artifact 后审查。"
+      },
+      "artifact": {
+        "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+        "state": "completed",
+        "partial": false,
+        "content": "PROOF_TOKEN_173",
+        "total_chars": 15,
+        "next_offset": null
+      },
+      "timeline": {
+        "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+        "events": [
+          {
+            "kind": "queued",
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:17.586Z",
+            "state": "queued",
+            "request": 0,
+            "elapsed_ms": 0,
+            "event_id": 1,
+            "label": "排队中"
+          },
+          {
+            "kind": "started",
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:17.854Z",
+            "state": "running",
+            "request": 0,
+            "elapsed_ms": 268,
+            "event_id": 3,
+            "label": "准备上下文"
+          },
+          {
+            "kind": "request_started",
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:17.856Z",
+            "state": "running",
+            "request": 1,
+            "elapsed_ms": 270,
+            "event_id": 4,
+            "label": "等待模型响应"
+          },
+          {
+            "kind": "response_received",
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:18.047Z",
+            "state": "running",
+            "request": 1,
+            "elapsed_ms": 461,
+            "event_id": 7,
+            "label": "已收到模型响应"
+          },
+          {
+            "kind": "tool_started",
+            "tool_name": "read_material",
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:18.049Z",
+            "state": "running",
+            "request": 1,
+            "elapsed_ms": 463,
+            "event_id": 8,
+            "label": "调用工具：读取材料"
+          },
+          {
+            "kind": "tool_completed",
+            "tool_name": "read_material",
+            "duration_ms": 0,
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:18.050Z",
+            "state": "running",
+            "request": 1,
+            "elapsed_ms": 464,
+            "event_id": 9,
+            "label": "工具完成：读取材料"
+          },
+          {
+            "kind": "request_started",
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:18.052Z",
+            "state": "running",
+            "request": 2,
+            "elapsed_ms": 466,
+            "event_id": 10,
+            "label": "等待模型响应"
+          },
+          {
+            "kind": "response_received",
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:18.211Z",
+            "state": "running",
+            "request": 2,
+            "elapsed_ms": 625,
+            "event_id": 15,
+            "label": "已收到模型响应"
+          },
+          {
+            "kind": "completed",
+            "task_id": "24bd5860-fe60-41ef-ad43-fb489b5087fd",
+            "at": "2026-10-16T06:04:18.213Z",
+            "state": "completed",
+            "request": 2,
+            "elapsed_ms": 627,
+            "event_id": 16,
+            "label": "已完成 · 待总调度审查"
+          }
+        ],
+        "next_after_event_id": 16,
+        "has_more": false,
+        "history_available": true
+      }
+    },
+    {
+      "task": {
+        "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+        "agent_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+        "project_id": "smoke",
+        "role": "review",
+        "backend": "external",
+        "profile": "deepseek",
+        "provider": "test",
+        "model": "deepseek-flash",
+        "state": "completed",
+        "progress": "Ready for coordinator review",
+        "created_at": "2026-10-16T06:04:17.587Z",
+        "started_at": "2026-10-16T06:04:17.859Z",
+        "finished_at": "2026-10-16T06:04:18.229Z",
+        "context_revision": 1,
+        "requests": 2,
+        "usage": {
+          "input_tokens": 200,
+          "output_tokens": 20,
+          "complete": true
+        },
+        "tools_used": [
+          "read_material"
+        ],
+        "artifact_available": true,
+        "partial_artifact_available": false,
+        "elapsed_ms": 642,
+        "queued_ms": 272,
+        "execution_ms": 370,
+        "phase": "completed",
+        "phase_label": "已完成 · 待总调度审查",
+        "event_cursor": 18,
+        "recent_events": [
+          {
+            "kind": "response_received",
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:18.061Z",
+            "state": "running",
+            "request": 1,
+            "elapsed_ms": 474,
+            "event_id": 11,
+            "label": "已收到模型响应"
+          },
+          {
+            "kind": "tool_started",
+            "tool_name": "read_material",
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:18.063Z",
+            "state": "running",
+            "request": 1,
+            "elapsed_ms": 476,
+            "event_id": 12,
+            "label": "调用工具：读取材料"
+          },
+          {
+            "kind": "tool_completed",
+            "tool_name": "read_material",
+            "duration_ms": 0,
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:18.064Z",
+            "state": "running",
+            "request": 1,
+            "elapsed_ms": 477,
+            "event_id": 13,
+            "label": "工具完成：读取材料"
+          },
+          {
+            "kind": "request_started",
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:18.066Z",
+            "state": "running",
+            "request": 2,
+            "elapsed_ms": 479,
+            "event_id": 14,
+            "label": "等待模型响应"
+          },
+          {
+            "kind": "response_received",
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:18.228Z",
+            "state": "running",
+            "request": 2,
+            "elapsed_ms": 641,
+            "event_id": 17,
+            "label": "已收到模型响应"
+          },
+          {
+            "kind": "completed",
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:18.229Z",
+            "state": "completed",
+            "request": 2,
+            "elapsed_ms": 642,
+            "event_id": 18,
+            "label": "已完成 · 待总调度审查"
+          }
+        ],
+        "result_excerpt": "REVIEW_TOKEN_829",
+        "result_is_partial": false,
+        "display_markdown": "**外部 Agent · review · c460fb85**\n\n模型：test / deepseek-flash ｜ 阶段：已完成 · 待总调度审查\n\n耗时：0.6 秒（排队 0.3 秒，执行 0.4 秒）｜ 请求：2/3\n\n工具：读取材料\n\n最近进度：0.5 秒 工具完成：读取材料 → 0.5 秒 等待模型响应 → 0.6 秒 已收到模型响应 → 0.6 秒 已完成 · 待总调度审查\n\n结果摘录（未经总调度核验）：REVIEW\\_TOKEN\\_829",
+        "next_action": "汇报终态；如有产物，读取 get_artifact 后审查。"
+      },
+      "artifact": {
+        "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+        "state": "completed",
+        "partial": false,
+        "content": "REVIEW_TOKEN_829",
+        "total_chars": 16,
+        "next_offset": null
+      },
+      "timeline": {
+        "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+        "events": [
+          {
+            "kind": "queued",
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:17.587Z",
+            "state": "queued",
+            "request": 0,
+            "elapsed_ms": 0,
+            "event_id": 2,
+            "label": "排队中"
+          },
+          {
+            "kind": "started",
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:17.859Z",
+            "state": "running",
+            "request": 0,
+            "elapsed_ms": 272,
+            "event_id": 5,
+            "label": "准备上下文"
+          },
+          {
+            "kind": "request_started",
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:17.861Z",
+            "state": "running",
+            "request": 1,
+            "elapsed_ms": 274,
+            "event_id": 6,
+            "label": "等待模型响应"
+          },
+          {
+            "kind": "response_received",
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:18.061Z",
+            "state": "running",
+            "request": 1,
+            "elapsed_ms": 474,
+            "event_id": 11,
+            "label": "已收到模型响应"
+          },
+          {
+            "kind": "tool_started",
+            "tool_name": "read_material",
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:18.063Z",
+            "state": "running",
+            "request": 1,
+            "elapsed_ms": 476,
+            "event_id": 12,
+            "label": "调用工具：读取材料"
+          },
+          {
+            "kind": "tool_completed",
+            "tool_name": "read_material",
+            "duration_ms": 0,
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:18.064Z",
+            "state": "running",
+            "request": 1,
+            "elapsed_ms": 477,
+            "event_id": 13,
+            "label": "工具完成：读取材料"
+          },
+          {
+            "kind": "request_started",
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:18.066Z",
+            "state": "running",
+            "request": 2,
+            "elapsed_ms": 479,
+            "event_id": 14,
+            "label": "等待模型响应"
+          },
+          {
+            "kind": "response_received",
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:18.228Z",
+            "state": "running",
+            "request": 2,
+            "elapsed_ms": 641,
+            "event_id": 17,
+            "label": "已收到模型响应"
+          },
+          {
+            "kind": "completed",
+            "task_id": "c460fb85-3df1-44e7-9610-ae8cea50e288",
+            "at": "2026-10-16T06:04:18.229Z",
+            "state": "completed",
+            "request": 2,
+            "elapsed_ms": 642,
+            "event_id": 18,
+            "label": "已完成 · 待总调度审查"
+          }
+        ],
+        "next_after_event_id": 18,
+        "has_more": false,
+        "history_available": true
+      }
+    }
+  ],
+  "scope": "Real MCP transport, durable queue and provider tool loop. Native GPT orchestration is a separate Codex-session acceptance check."
+}
