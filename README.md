@@ -173,8 +173,8 @@ export DEEPSEEK_API_KEY="<你的 DeepSeek API Key>"   # 建议写入 ~/.zshrc �
 ### 1. 获取源码
 
 ```bash
-git clone https://github.com/<your-account>/agent-bridge.git
-cd agent-bridge
+git clone https://github.com/Meroki0117/research-agent-bridge.git
+cd research-agent-bridge
 ```
 
 也可以下载 Releases 里的源码压缩包后解压。
