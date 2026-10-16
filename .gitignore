@@ -1,0 +1,22 @@
+node_modules/
+.data/
+bridge.config.json
+*.sqlite*
+*.env
+test-results/
+.npm-cache/
+codex-mcp.toml
+
+# 构建产物：由 npm run build 生成
+dist/
+
+# 发行包：作为 GitHub Release 附件上传，不进入版本库
+agent-bridge-*.zip
+agent-bridge-*.zip.sha256
+
+
+.env
+.env.*
+*.zip
+*.zip.sha256
+*.log

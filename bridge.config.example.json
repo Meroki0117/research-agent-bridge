@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "dataDir": ".data",
+  "concurrency": 2,
+  "maxQueued": 100,
+  "maxInputChars": 120000,
+  "routing": {
+    "maxActiveChildren": 2,
+    "rules": [
+      "For substantial mathematics tasks, consider a derivation agent and an independent reviewer; choose GPT native or an external profile based on task needs.",
+      "For paper writing, separate drafting from source/claim review. Do not present unverified references as real sources.",
+      "Use the same model for multiple agents when appropriate; roles and agent instances must stay independent of model providers."
+    ]
+  },
+  "profiles": {
+    "deepseek": {
+      "adapter": "responses",
+      "provider": "deepseek",
+      "endpoint": "https://api.deepseek.com/responses",
+      "model": "deepseek-flash",
+      "apiKeyEnv": "DEEPSEEK_API_KEY",
+      "reasoningEffort": "none",
+      "maxOutputTokens": 4096
+    }
+  },
+  "defaults": {
+    "profile": "deepseek",
+    "timeoutSeconds": 180,
+    "maxRequests": 6,
+    "outputTokenBudget": 12000
+  }
+}
