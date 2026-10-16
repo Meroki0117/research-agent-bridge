@@ -346,6 +346,8 @@ tool_timeout_sec = 40
 
 把 `BRIDGE-RULES.md` 的内容合并到研究项目的 `AGENTS.md`，并把其中的示例项目 ID 换成稳定唯一的名称，常用项目就能按规则自动分工（**不要覆盖原有的项目规则**）。
 
+完整方法见 **[AGENT-PRESETS.md](AGENT-PRESETS.md)**：4 个可直接复制的对话框话术模板（推导+独立审查、三代理、同模型多实例、论文起草+来源核验）、项目根 `AGENTS.md` 完整模板、`routing.rules` 示例，以及**改 `AGENTS.md` 与改 `routing.rules` 的区别与选择**（含"规范要写给谁听"的四层模型）。
+
 ### 进度展示开关
 
 在会话里直接说「开启外部 Agent 进度展示。」/「关闭外部 Agent 进度展示。」/「查看外部 Agent 进度展示开关。」，对应 `set_progress_visibility({enabled})` 与 `get_progress_visibility({})`。开关持久化在数据库中，同一数据目录的所有会话共用；开启会增加 GPT 侧 token 消耗（本地事件记录与格式化本身不调用模型）。
@@ -408,6 +410,7 @@ evidence/                验证证据：真实 API 联调、桌面引擎调用�
 Install-Codex.ps1        Windows 一键安装脚本
 bridge.config.example.json  运行配置示例
 BRIDGE-RULES.md          可合并进项目 AGENTS.md 的调度规则模板
+AGENT-PRESETS.md         预设各 Agent 工作内容的完整指南（话术模板 / AGENTS.md 模板 / 与 routing.rules 的区别）
 VALIDATION.md            验证范围与剩余边界
 ```
 
